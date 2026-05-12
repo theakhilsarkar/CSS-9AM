@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+  background-color: crimson;
+  margin: 10px;
+  font-size: 26px;
+  text-align: center;
+  align-content: center;
+  color: white;
+}
+
+/*
+display flex ->
+justify content -> main axis -> x horizontal
+align-item -> cross axis -> y -> verticle
+
+main axis -> y
+cross -> x
+
+
+*/
