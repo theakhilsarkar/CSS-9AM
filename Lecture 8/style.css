@@ -8,6 +8,7 @@
 body {
   height: 100vh;
   width: 100%;
+  background-color: rgb(237, 242, 247);
 }
 
 nav {
@@ -40,4 +41,104 @@ nav {
 .nav-menu-username {
   font-weight: 600;
   letter-spacing: 1px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-menu-box {
+  width: 20%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-detail-box {
+  width: 70%;
+  background-color: white;
+}
+
+.left-menu-box-item {
+  margin: 15px 10px;
+}
+.left-menu-icon {
+  color: #1a6ccc;
+  font-size: 24px;
+}
+.left-menu-name {
+  margin-left: 5px;
+  color: #1a6ccc;
+  font: 22px;
+  font-weight: 600;
+}
+
+.left-menu-box-bottom-text {
+  color: rgb(171, 170, 170);
+  font-size: 14px;
+}
+
+.top-seller-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.top-seller-row-title-box span {
+  color: #1a6ccc;
+}
+.top-seller-row-title-box i {
+  color: goldenrod;
+  font-size: 24px;
+}
+.top-seller-row-filter-box span,
+i {
+  color: rgb(182, 181, 181);
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.right-all-seller-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.right-seller-detail-box {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+.right-seller-detail-box img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.right-seller-detail-box div h3 {
+  font-size: 14px;
+  color: rgb(44, 44, 44);
+  font-weight: normal;
+}
+
+.right-seller-detail-box div p {
+  font-size: 12px;
+  color: rgb(44, 44, 44);
+  font-weight: normal;
+}
+
+.right-seller-detail-box div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
