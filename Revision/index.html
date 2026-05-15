@@ -6,27 +6,59 @@
     <title>Document</title>
   </head>
   <body>
-    <table border="1" cellspacing="0" cellpadding="10">
-      <caption>Table</caption>
-      <thead>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Phone</th>
-      </thead>
-      <tr>
-        <td>1</td>
-        <td bgcolor="yellow" rowspan="2">Aman</td>
-        <td>22</td>
-        <td>789654130</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td colspan="2">25</td>
-      </tr>
-      <tfoot>
-        <td colspan="4">hello</td>
-      </tfoot>
-    </table>
+    <center>
+      <h1>Registration Forms</h1>
+      <form action="about.html" method="get">
+        <div>
+          <input type="text" placeholder="Your name" />
+        </div>
+        <div>
+          <input value="18" type="number" placeholder="Your age" />
+        </div>
+        <div>
+          <input type="email" placeholder="your@mail.com" />
+        </div>
+        <div>
+          <input type="password" placeholder="********" />
+        </div>
+        <div>
+          <input type="tel" placeholder="tel" />
+        </div>
+        <div>
+          <input type="color" placeholder="" />
+        </div>
+        <div>
+          <input type="date" placeholder="" />
+        </div>
+        <div>
+          <input type="range" min="1" max="20" />
+        </div>
+        <div>
+          <input type="file" />
+        </div>
+        <div>
+          <input type="radio" name="gender" />Male
+          <input type="radio" name="gender" />Female
+          <input type="radio" name="gender" />Other
+        </div>
+        <div>
+          <input type="checkbox" />
+          <input checked type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+          <input type="checkbox" />
+        </div>
+        <div>
+          <select name="" id="">
+            <option value="1">Surat</option>
+            <option value="1">Ahemdabad</option>
+            <option selected value="1">Baroda</option>
+            <option value="1">Bharuch</option>
+            <option value="1">Gandhinagar</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </center>
   </body>
 </html>

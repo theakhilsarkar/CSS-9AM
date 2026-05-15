@@ -1,0 +1,9 @@
+div:first-child {
+  color: purple;
+  font-weight: bold;
+}
+
+div p:nth-last-child(2) {
+  color: orange;
+  font-weight: bold;
+}
