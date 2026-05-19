@@ -1,0 +1,62 @@
+/*margin/padding : max -> 24px/fontsize - px*/
+/*fix size -> px*/
+/*ratio-relative -> %*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.item-center {
+  align-items: center;
+}
+.item-start {
+  align-items: start;
+}
+.item-end {
+  align-items: end;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin: 10px;
+}

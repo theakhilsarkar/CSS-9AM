@@ -3,218 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Instagram Style Feed</title>
+    <style>
+      body {
+        margin: 0;
+        background: #111;
+        font-family: sans-serif;
+      }
+
+      .feed {
+        column-count: 6;
+        /* number of columns on wide screens */
+        column-gap: 10px;
+        padding: 10px;
+      }
+
+      .feed-item {
+        /* break-inside: avoid; */
+        margin-bottom: 10px;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .feed-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .feed-item img:hover {
+        transform: scale(1.03);
+      }
+    </style>
   </head>
+
   <body>
-    <nav>
-      <h3 class="store">iShadeed Store.</h3>
-      <div class="nav-menu">
-        <a class="nav-menubar" href="#">Home</a>
-        <a class="nav-menubar" href="#">About</a>
-        <a class="nav-menubar" href="#">Works</a>
-        <span class="nav-profile-name">Ahamad Shadeed</span>
-        <img class="nav-profile-image" src="images/profile.image.jpg" />
+    <div class="feed">
+      <!-- Use real or random image URLs -->
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/400?random=1" alt="" />
       </div>
-    </nav>
-    <main>
-      <div class="main-head">
-        <div>
-          <i class="ri-home-4-line"></i>
-          <span>Home</span>
-        </div>
-        <div>
-          <i class="ri-shopping-cart-2-line"></i>
-          <span>Cart</span>
-        </div>
-        <div>
-          <i class="ri-firebase-line"></i>
-          <span>Coupose</span>
-        </div>
-        <div>
-          <i class="ri-star-line"></i>
-          <span>Favorit items</span>
-        </div>
-        <div>
-          <i class="ri-settings-2-line"></i>
-          <span>Setting</span>
-        </div>
-        <div class="main-head-footer">
-          <div>
-            <p>iShadeed @ 2019</p>
-            <p>privacy policy Terms and Conditions</p>
-          </div>
-        </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/500?random=2" alt="" />
       </div>
-
-      <div class="main-box">
-        <div class="seller-nav-row-box">
-          <div class="top-seller">
-            <i class="ri-fire-fill"></i>
-            <span>Top Sellers </span>
-          </div>
-          <div class="filter-by">
-            <span>Filter By</span>
-            <i class="ri-menu-2-line"></i>
-          </div>
-        </div>
-        <div class="right-all-seller-box">
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-          <div class="right-seller-detials-boxx">
-            <img src="./images/profile.image.jpg" />
-            <div>
-              <h3>John Smite</h3>
-              <p>154 orders</p>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <div class="top-seller">
-          <i class="ri-fire-fill"></i>
-          <span>Top Article </span>
-        </div>
-
-        <div class="botam-all-image">
-          <div class="botam-images">
-            <img src="./image.png" />
-            <div class="image-paragraph">
-              <p>
-                How to disign in a logo in<br />
-                5 steps
-              </p>
-              <p class="ahmad">by Ahmad Shadeed</p>
-            </div>
-          </div>
-          <div class="botam-images">
-            <img src="./images/imge.jpg" />
-            <div class="image-paragraph">
-              <p>
-                The Importance of UX<br />
-                design in Business
-              </p>
-              <p class="ahmad">by John Smith</p>
-            </div>
-          </div>
-          <div class="botam-images">
-            <img src="./image.png" />
-            <div class="image-paragraph">
-              <p>
-                How to disign in a logo in<br />
-                5 steps
-              </p>
-              <p class="ahmad">by Ahmad Shadeed</p>
-            </div>
-          </div>
-          <div class="botam-images">
-            <img src="./images/imge.jpg" />
-            <div class="image-paragraph">
-              <p>The Importance of UX<br />design in Business</p>
-              <p class="ahmad">by John Smith</p>
-            </div>
-          </div>
-        </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/300?random=3" alt="" />
       </div>
-    </main>
-    <section>
-      <div>
-        <div class="section-main-box">
-          <div class="top-seller">
-            <i class="ri-fire-fill"></i>
-            <span class="latest-Bla">Latest Bla Bla </span>
-          </div>
-          <div>
-            <input
-              class="input-type"
-              type="text"
-              placeholder="What are you looking for?"
-            />
-            <button class="button">Serch</button>
-          </div>
-          <br />
-          <hr />
-          <div class="main-head-for-last-box">
-            <div class="last-page-img">
-              <img src="./images/lastpageimage.jpg" />
-              <p class="last-paragraph">
-                How to design in a logo in<br />
-                5 steps
-              </p>
-              <p class="last-paragraph">by Ahmad Shadeed</p>
-            </div>
-            <div class="last-page-img">
-              <img src="./images/lastpageimage.jpg" />
-              <p class="last-paragraph">
-                How to design in a logo in<br />
-                5 steps
-              </p>
-              <p class="last-paragraph">by Ahmad Shadeed</p>
-            </div>
-            <div class="last-page-img">
-              <img src="./images/lastpageimage.jpg" />
-              <p class="last-paragraph">
-                How to design in a logo in<br />
-                5 steps
-              </p>
-              <p class="last-paragraph">by Ahmad Shadeed</p>
-            </div>
-          </div>
-        </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/450?random=4" alt="" />
       </div>
-    </section>
-    <br />
-    <br />
-    <br />
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/600?random=5" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/350?random=6" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/500?random=7" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/400?random=8" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/550?random=9" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/375?random=10" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/375?random=11" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/375?random=12" alt="" />
+      </div>
+      <div class="feed-item">
+        <img src="https://picsum.photos/300/375?random=13" alt="" />
+      </div>
+    </div>
   </body>
 </html>
