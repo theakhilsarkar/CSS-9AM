@@ -1,11 +1,19 @@
 /*margin/padding : max -> 24px/fontsize - px*/
 /*fix size -> px*/
 /*ratio-relative -> %*/
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-white {
+  background-color: white;
+}
+.bg-gray {
+  background-color: rgb(231, 230, 230);
 }
 
 body {
@@ -59,4 +67,60 @@ body {
   width: 100px;
   background-color: aquamarine;
   margin: 10px;
+}
+
+.left-section {
+  width: 15%;
+}
+
+.logo-name-box {
+  height: 70px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-name-box i {
+  color: white;
+  background-color: #1371ee;
+  padding: 8px;
+  border-radius: 8px;
+}
+.logo-name-box h2 {
+  font-weight: 500;
+}
+
+.side-menu-box,
+.side-bottom-menu-box {
+  width: 100%;
+}
+.side-menu-box div,
+.side-bottom-menu-box div {
+  display: flex;
+  padding: 15px 20px;
+  margin: 10px 20px;
+  gap: 10px;
+  font-weight: 500;
+  border-radius: 8px;
+  color: rgb(29, 29, 29);
+}
+
+.side-menu-box div:first-child {
+  background-color: aliceblue;
+  color: #1371ee;
+}
+
+.side-menu-box div i,
+.side-bottom-menu-box div i {
+  font-size: 20px;
+}
+
+.side-bottom-menu-box div:last-child {
+  color: red;
+}
+
+.hr {
+  height: 0.5px;
+  width: 80%;
+  background-color: gray;
+  margin: 20px 0px;
 }
