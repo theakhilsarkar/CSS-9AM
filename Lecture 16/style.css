@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*
+
+display:flex; row(horizontal) -> main axis (x), and cross axis(y)
+flex direction: col(verticle) -> main axis (y), and cros axis(x)
+
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto','sans-serif';
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 242, 61);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.item-1{
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* order: 3; */
+    align-self: flex-start;
+}
+
+.item-2{
+    /* flex-grow: 2; */
+    /* order: 0; */
+}
