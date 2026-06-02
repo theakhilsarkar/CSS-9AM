@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("./assets/fonts/amazon.ttf");
+}
+@font-face {
+  font-family: "Amazon Ember Medium";
+  src: url("./assets/fonts/amazon-medium.ttf");
+}
+@font-face {
+  font-family: "Amazon Ember Bold";
+  src: url("./assets/fonts/amazon-bold.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Amazon Ember";
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 30);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.nav-bar {
+  position: fixed;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.nav-bar .left-nav img {
+  height: 20px;
+  margin-right: 10px;
+}
+.nav-bar a {
+  padding: 10px 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+.nav-bar a:hover {
+  background-color: white;
+  color: rgb(0, 0, 30);
+  border-radius: 8px;
+}
+
+.nav-bar .rounded-100:hover {
+  padding: 10px 12px;
+  background-color: white;
+  color: rgb(0, 0, 30);
+  border-radius: 50%;
+}
+
+.join-prime-button {
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: #1a98ff;
+  border-radius: 8px;
+}
+
+.ri-gallery-view-2 {
+  margin-right: 5px;
+}
+.left-nav,
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-image: url("https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1_ReflectionColour/b7ba971a-3a22-4a38-ac90-a6cbfa68c43c._UR3840,1440_SX2880_FMwebp_.jpeg");
+}
