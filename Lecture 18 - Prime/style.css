@@ -37,6 +37,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -51,7 +53,7 @@ nav {
   color: white;
 }
 .nav-bar a:hover {
-  background-color: white;
+  background-color: rgb(232, 232, 232);
   color: rgb(0, 0, 30);
   border-radius: 8px;
 }
@@ -87,4 +89,71 @@ nav {
   width: 100%;
   background-size: contain;
   background-image: url("https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1_ReflectionColour/b7ba971a-3a22-4a38-ac90-a6cbfa68c43c._UR3840,1440_SX2880_FMwebp_.jpeg");
+  display: flex;
+  justify-content: center;
+}
+
+.join-prime-button:hover {
+  background-color: #2a9fff;
+  box-shadow: 0px 8px 50px #1a98ff;
+}
+
+.hero-box {
+  width: 90%;
+}
+
+.hero-detail {
+  height: 100%;
+  width: 30%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-rank {
+  color: rgb(29, 174, 29);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-weight: 500;
+  /* width: 450px; */
+}
+
+.hero-join-prime-button {
+  height: 70px;
+  width: 150px;
+  font-weight: 600;
+  background-color: rgba(130, 130, 130, 0.4);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.hero-add-button,
+.hero-detail-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(130, 130, 130, 0.4);
+  color: white;
+  font-size: 20px;
+}
+
+.hero-button-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ri-shopping-bag-fill{
+  color: gold;
+  margin-right: 10px;
 }
