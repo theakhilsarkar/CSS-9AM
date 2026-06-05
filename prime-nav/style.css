@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  height: 80%;
+  background-size: contain;
+  /* background-repeat: no-repeat; */
+  background-image: url("https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1_ReflectionColour/b7ba971a-3a22-4a38-ac90-a6cbfa68c43c._UR3840,1440_SX2880_FMwebp_.jpeg");
+}
+
+nav {
+  width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  height: 60px;
+  background-color: rgba(0, 0, 30, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+}
+
+button:hover + .language-box {
+}
+
+.language-box {
+  position: absolute;
+  top: 70px;
+  right: 250px;
+  height: 200px;
+  width: 300px;
+  /* background-color: wheat; */
+  background-color: rgba(0, 0, 30, 0.5);
+  backdrop-filter: blur(10px);
+}

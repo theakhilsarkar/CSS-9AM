@@ -27,7 +27,7 @@ body {
 nav {
   display: flex;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
 .nav-bar {
   position: fixed;
@@ -84,6 +84,63 @@ nav {
   align-items: center;
 }
 
+.language-box {
+  top: 70px;
+  right: 0;
+  /* height: 420px; */
+  width: 700px;
+  backdrop-filter: blur(15px);
+  background: rgba(4, 4, 20, 0.9);
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  visibility: hidden;
+  z-index: 999;
+  /* opacity: 0; */
+  transition: opacity 0.3s ease-out;
+  border: 1px solid white;
+  box-shadow: -5px -5px 100px rgb(66, 66, 66);
+}
+
+.language-button {
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.language-button:hover {
+  background-color: white;
+  color: black;
+}
+/*Element-A:hover --> Element-B
+
+Element B child Element-A
+E-a, E-b -> parent same
+
+
+*/
+.language-button:hover + .language-box,
+.language-bg {
+  visibility: visible;
+  /* visibility: visible; */
+  /* opacity: 1; */
+}
+
+.language-box span {
+  margin: 10px 20px;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+.language-box span:hover {
+  color: black;
+
+  background-color: white;
+}
 .hero {
   height: 80%;
   width: 100%;
@@ -153,7 +210,14 @@ nav {
   gap: 10px;
 }
 
-.ri-shopping-bag-fill{
+.ri-shopping-bag-fill {
   color: gold;
   margin-right: 10px;
 }
+
+
+/*
+
+
+
+*/
