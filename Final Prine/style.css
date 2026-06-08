@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("./assets/fonts/amazon.ttf");
+}
+@font-face {
+  font-family: "Amazon Ember Medium";
+  src: url("./assets/fonts/amazon-medium.ttf");
+}
+@font-face {
+  font-family: "Amazon Ember Bold";
+  src: url("./assets/fonts/amazon-bold.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Amazon Ember";
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 30);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  /* position: fixed; */
+}
+.nav-bar {
+  position: fixed;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  border-radius: 0px 0px 10px 10px;
+  isolation: isolate;
+}
+
+/* Blur nav bar using pseudo-element so children can use their own blur */
+.nav-bar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(5px);  */
+  border-radius: 0px 0px 10px 10px;
+  z-index: -1;
+}
+
+.nav-bar .left-nav img {
+  height: 20px;
+  margin-right: 10px;
+}
+.nav-bar a {
+  padding: 10px 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+.nav-bar a:hover {
+  background-color: rgb(232, 232, 232);
+  color: rgb(0, 0, 30);
+  border-radius: 8px;
+}
+
+.nav-bar .rounded-100:hover {
+  padding: 10px 12px;
+  background-color: white;
+  color: rgb(0, 0, 30);
+  border-radius: 50%;
+}
+
+.join-prime-button {
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  background-color: #1a98ff;
+  border-radius: 8px;
+}
+
+.ri-gallery-view-2 {
+  margin-right: 5px;
+}
+.left-nav,
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.language-box {
+  top: 70px;
+  right: 0;
+  width: 680px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  color: white;
+  font-weight: 600;
+  align-items: start;
+  justify-items: start;
+  padding: 20px 25px;
+  border-radius: 12px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9999;
+
+  /* Amazon Prime Style Glassmorphism - now works! */
+  background: rgba(20, 20, 35, 0.45);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.language-box.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.language-button {
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.language-button:hover {
+  background-color: white;
+  color: black;
+}
+.language-button:hover ~ .language-box {
+  visibility: visible;
+  opacity: 1;
+}
+.language-box:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.language-box span {
+  margin: 6px 0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.language-box span:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.hero {
+  height: 80%;
+  width: 100%;
+  background-size: contain;
+  background-image: url("https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1_ReflectionColour/b7ba971a-3a22-4a38-ac90-a6cbfa68c43c._UR3840,1440_SX2880_FMwebp_.jpeg");
+  display: flex;
+  justify-content: center;
+}
+
+.join-prime-button:hover {
+  background-color: #2a9fff;
+  box-shadow: 0px 8px 50px #1a98ff;
+}
+
+.hero-box {
+  width: 90%;
+}
+
+.hero-detail {
+  height: 100%;
+  width: 30%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-rank {
+  color: rgb(29, 174, 29);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hero-description {
+  font-size: 18px;
+  font-weight: 500;
+  /* width: 450px; */
+}
+
+.hero-join-prime-button {
+  height: 70px;
+  width: 150px;
+  font-weight: 600;
+  background-color: rgba(130, 130, 130, 0.4);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.hero-add-button,
+.hero-detail-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(130, 130, 130, 0.4);
+  color: white;
+  font-size: 20px;
+}
+
+.hero-button-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ri-shopping-bag-fill {
+  color: gold;
+  margin-right: 10px;
+}
+
+
+/*
+
+a -> hover
+style to b
+
+parent same
+
+
+glassy
+
+element glassy bg
+child image/
+
+*/
