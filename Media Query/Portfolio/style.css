@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+.box {
+  /* width: 200px;
+  height: 200px; */
+  /* padding: 5px; */
+  /* margin: 5px; */
+  background-color: cornflowerblue;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 100%;
+  /* background-color: rgb(255, 230, 243); */
+}
+.col-2 {
+  width: 50%;
+  /* background-color: rgb(255, 230, 243); */
+}
+.col-3 {
+  width: 33.33%;
+  /* background-color: rgb(255, 230, 243); */
+}
+.col-4 {
+  width: 25%;
+  /* background-color: rgb(255, 230, 243); */
+}
+.col-5 {
+  width: 20%;
+  /* background-color: rgb(255, 230, 243); */
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-start {
+  justify-content: start;
+}
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.align-start {
+  align-items: start;
+}
+.align-center {
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.m-1 {
+  margin: 4px;
+}
+.mv-3 {
+  margin: 12px 0px;
+}
+.p-1 {
+  padding: 4px;
+}
+.p-2 {
+  padding: 8px;
+}
+.ph-1 {
+  padding: 0px 4px;
+}
+.ph-2 {
+  padding: 0px 8px;
+}
+.pv-2 {
+  padding: 8px 0px;
+}
+
+.skill-box {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 8px;
+  font-weight: 600;
+  display: inline;
+  text-align: center;
+}
+
+.container-parent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.container {
+  width: 1320px;
+  /* background-color: aliceblue; */
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+
+  .col {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .col {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+  }
+}
+
+/* nav hero education skills experiance projects contact-form footer. */
