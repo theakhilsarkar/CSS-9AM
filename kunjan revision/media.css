@@ -1,0 +1,40 @@
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+  .col {
+    width: 46%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  .col {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .col {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+  .col {
+    width: 23%;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+  .col {
+    width: 23%;
+  }
+}
